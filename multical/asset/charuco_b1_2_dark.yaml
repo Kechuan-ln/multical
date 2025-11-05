@@ -1,0 +1,47 @@
+common:
+  _type_: 'charuco'
+  size: [7,9]
+  aruco_dict: '7X7_250'
+  square_length: 0.095
+  marker_length: 0.075
+
+  min_rows: 0
+  min_points: 30  # 降低最小点数要求（原40）
+
+boards:
+  charuco_B1_0:
+    aruco_offset: 0
+
+
+# ===== 针对暗图像优化的ArUco检测参数 =====
+aruco_params:
+  # 自适应阈值窗口大小（增大以适应低对比度）
+  adaptiveThreshWinSizeMin: 5       # 最小窗口（默认3）
+  adaptiveThreshWinSizeMax: 35      # 最大窗口（原23，增大）
+  adaptiveThreshWinSizeStep: 8      # 步长（原10，减小以更精细）
+
+  # 自适应阈值常数（增大以提高检测灵敏度）
+  adaptiveThreshConstant: 10        # 阈值常数（默认7，增大）
+
+  # 标记检测阈值
+  minMarkerPerimeterRate: 0.01      # 最小标记周长（降低，默认0.03）
+  maxMarkerPerimeterRate: 4.0       # 最大标记周长
+
+  # 多边形近似精度（提高容错性）
+  polygonalApproxAccuracyRate: 0.08 # 近似精度（默认0.05，增大）
+
+  # 角点细化（提高精度）
+  cornerRefinementMethod: 2         # 2=CORNER_REFINE_SUBPIX（亚像素精度）
+  cornerRefinementWinSize: 5        # 细化窗口大小
+  cornerRefinementMaxIterations: 50 # 细化迭代次数（增大）
+  cornerRefinementMinAccuracy: 0.05 # 细化精度要求（降低）
+
+  # 标记边界位检测
+  markerBorderBits: 1               # 边界位数（默认1）
+
+  # 错误校正能力
+  errorCorrectionRate: 0.8          # 错误校正率（提高容错，默认0.6）
+
+  # 透视移除
+  perspectiveRemovePixelPerCell: 8  # 透视校正分辨率（默认4，增大）
+  perspectiveRemoveIgnoredMarginPerCell: 0.15  # 忽略边缘（默认0.13）

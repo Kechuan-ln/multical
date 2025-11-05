@@ -1,0 +1,130 @@
+{
+  "skeleton_joints": [
+    {
+      "joint_name": "Pelvis",
+      "joint_id": 0,
+      "formula": "mean",
+      "markers": ["LHip_computed", "RHip_computed"],
+      "description": "Root joint - center of left and right hips"
+    },
+    {
+      "joint_name": "LHip",
+      "joint_id": 1,
+      "formula": "mean",
+      "markers": ["LPelvisf", "LPelvisb"],
+      "description": "Left hip - average of left pelvis front and back"
+    },
+    {
+      "joint_name": "RHip",
+      "joint_id": 2,
+      "formula": "mean",
+      "markers": ["Rpelvisf", "Rpelvisb"],
+      "description": "Right hip - average of right pelvis front and back"
+    },
+    {
+      "joint_name": "Spine1",
+      "joint_id": 3,
+      "formula": "mean",
+      "markers": ["Spine1", "Spine2"],
+      "description": "Spine - average of spine markers"
+    },
+    {
+      "joint_name": "Neck",
+      "joint_id": 4,
+      "formula": "mean",
+      "markers": ["Neck1", "Neck2"],
+      "description": "Neck - average of neck markers"
+    },
+    {
+      "joint_name": "Head",
+      "joint_id": 5,
+      "formula": "mean",
+      "markers": ["head1", "head2", "head3", "head4"],
+      "description": "Head center - average of 4 head markers"
+    },
+    {
+      "joint_name": "Jaw",
+      "joint_id": 6,
+      "formula": "mean",
+      "markers": ["face1", "Face2"],
+      "description": "Jaw - average of left and right face markers"
+    },
+    {
+      "joint_name": "LShoulder",
+      "joint_id": 7,
+      "formula": "mean",
+      "markers": ["Lshoulder1", "Lshoulder2", "Lshoulder3"],
+      "description": "Left shoulder - average of 3 shoulder markers"
+    },
+    {
+      "joint_name": "LElbow",
+      "joint_id": 8,
+      "formula": "mean",
+      "markers": ["Lelbowl1", "Lelbowl2", "Lelbowl3"],
+      "description": "Left elbow - average of 3 elbow markers"
+    },
+    {
+      "joint_name": "LWrist",
+      "joint_id": 9,
+      "formula": "mean",
+      "markers": ["Lwristl1", "Lwristl2"],
+      "description": "Left wrist - average of 2 wrist markers"
+    },
+    {
+      "joint_name": "RShoulder",
+      "joint_id": 10,
+      "formula": "mean",
+      "markers": ["Rshoulder1", "Rshoulder2", "Rshoulder3"],
+      "description": "Right shoulder - average of 3 shoulder markers"
+    },
+    {
+      "joint_name": "RElbow",
+      "joint_id": 11,
+      "formula": "mean",
+      "markers": ["Relbow1", "Relbow2", "Relbow3"],
+      "description": "Right elbow - average of 3 elbow markers"
+    },
+    {
+      "joint_name": "RWrist",
+      "joint_id": 12,
+      "formula": "mean",
+      "markers": ["Rwristr1", "Rwristr2"],
+      "description": "Right wrist - average of 2 wrist markers"
+    },
+    {
+      "joint_name": "LKnee",
+      "joint_id": 13,
+      "formula": "mean",
+      "markers": ["Lkneel1", "Lkneel2"],
+      "description": "Left knee - average of 2 knee markers"
+    },
+    {
+      "joint_name": "LAnkle",
+      "joint_id": 14,
+      "formula": "mean",
+      "markers": ["Lanklel1", "Lanklel2"],
+      "description": "Left ankle - average of 2 ankle markers"
+    },
+    {
+      "joint_name": "RKnee",
+      "joint_id": 15,
+      "formula": "mean",
+      "markers": ["Rkneer1", "Rkneer2"],
+      "description": "Right knee - average of 2 knee markers"
+    },
+    {
+      "joint_name": "RAnkle",
+      "joint_id": 16,
+      "formula": "mean",
+      "markers": [],
+      "description": "Right ankle - NOT COMPUTED (replaced by prosthesis)"
+    }
+  ],
+  "skeleton_topology": {
+    "description": "Parent-child relationships for skeleton hierarchy (H36M format)",
+    "parents": [-1, 0, 0, 0, 3, 4, 5, 4, 7, 8, 4, 10, 11, 1, 13, 2, 15],
+    "joint_names": ["Pelvis", "LHip", "RHip", "Spine1", "Neck", "Head", "Jaw",
+                    "LShoulder", "LElbow", "LWrist", "RShoulder", "RElbow", "RWrist",
+                    "LKnee", "LAnkle", "RKnee", "RAnkle"]
+  }
+}

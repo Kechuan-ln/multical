@@ -1,0 +1,37 @@
+{
+  "primecolor": {
+    "file_path": "/Volumes/FastACIS/csl-data/sync.avi",
+    "file_size_mb": 414.53478622436523,
+    "codec": "mjpeg",
+    "width": 1920,
+    "height": 1080,
+    "fps": 120.0,
+    "fps_raw": "120/1",
+    "duration_sec": 29.066667,
+    "nb_frames": 3488,
+    "pix_fmt": "yuvj420p",
+    "bit_rate_mbps": 119.645457,
+    "container_format": "avi",
+    "has_timecode": false,
+    "timecode": null
+  },
+  "gopro_meta": null,
+  "mocap": {
+    "csv_path": "/Volumes/FastACIS/csl-data/Take 2025-10-24 04.01.02 PM.csv",
+    "file_size_mb": 13.542369842529297,
+    "capture_fps": 120.0,
+    "export_fps": 120.0,
+    "total_frames": 9067,
+    "capture_start_frame": 18214,
+    "num_markers": 2,
+    "time_column": "Unnamed: 0",
+    "data_rows": 9070,
+    "marker_names": [
+      "Type",
+      "Marker"
+    ],
+    "coordinate_space": "Global",
+    "length_units": "Millimeters"
+  },
+  "analysis_timestamp": "2025-11-03T17:49:22.825632"
+}

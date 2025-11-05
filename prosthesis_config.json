@@ -1,0 +1,50 @@
+{
+  "prosthesis_name": "Genesis Running Blade",
+  "stl_file": "/Volumes/FastACIS/annotation_pipeline/Genesis.STL",
+  "mesh_center": [
+    195.6567840576172,
+    188.72283935546875,
+    72.9051284790039
+  ],
+  "points": {
+    "RPBR": {
+      "position": [
+        149.50721740722656,
+        -150.3661651611328,
+        36.00481414794922
+      ],
+      "description": "Point on prosthesis mesh corresponding to marker RPBR"
+    },
+    "RPBL": {
+      "position": [
+        146.5411834716797,
+        -150.31842041015625,
+        -34.52518081665039
+      ],
+      "description": "Point on prosthesis mesh corresponding to marker RPBL"
+    },
+    "RPUL": {
+      "position": [
+        42.42155456542969,
+        432.21221923828125,
+        27.382728576660156
+      ],
+      "description": "Point on prosthesis mesh corresponding to marker RPUL"
+    },
+    "RPUR": {
+      "position": [
+        32.30938720703125,
+        440.73638916015625,
+        -25.801559448242188
+      ],
+      "description": "Point on prosthesis mesh corresponding to marker RPUR"
+    }
+  },
+  "marker_order": [
+    "RPBR",
+    "RPBL",
+    "RPUL",
+    "RPUR"
+  ],
+  "note": "Positions are in mesh-centered coordinates"
+}

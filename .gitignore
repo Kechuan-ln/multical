@@ -1,0 +1,13 @@
+assets
+external/aniposelib
+
+**/__pycache__/
+**.pyc
+
+**.jpg 
+**.png
+**.mp4
+**.gif
+**.MP4
+
+
